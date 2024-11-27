@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+
 @keyframes animateBg {
   100% {
     filter: hue-rotate(360deg);
   }
 }
+
 html {
   height: 100%;
 }
+
 body {
   background: url(bg.jpg);
   animation: animateBg 5s linear infinite;
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
-/* final.css */
 
-/* Change all font colors to aqua */
 body,
 header,
 nav,
@@ -34,14 +37,17 @@ blockquote {
   font-size: 1.5rem;
   font-family: "Platypi", serif;
 }
+
+/* Header Styles */
 header {
-  padding: 10px 20px; /* Adjust padding as needed */
-  border: 4px solid aqua; /* Set border style */
+  padding: 10px 20px;
+  border: 4px solid aqua;
   border-radius: 5px;
   background-color: black;
   margin: 20px;
   text-align: center;
 }
+
 header:hover h1,
 header:hover h2,
 header:hover h3,
@@ -51,39 +57,46 @@ header:hover a,
 header:hover ul,
 header:hover li,
 header:hover blockquote {
-  text-shadow: 0 0 10px orange, 0 0 20px darkblue, 0 0 30px darkblue; /* Adjust glow effect */
+  text-shadow: 0 0 10px orange, 0 0 20px darkblue, 0 0 30px darkblue;
 }
+
 header p a {
-  border: 2px solid aqua; /* Add a border */
-  padding: 10px; /* Optional: Add padding for spacing */
-  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  border: 2px solid aqua;
+  padding: 10px;
+  border-radius: 5px;
   background-color: white;
 }
+
 header:hover p a {
   background-color: red;
 }
 
 nav ul li {
-  list-style: disc; /* Remove default list style */
+  list-style: disc;
 }
+
 a {
   line-height: 3;
-  border: 2px solid aqua; /* Add a border */
-  padding: 10px; /* Optional: Add padding for spacing */
-  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  border: 2px solid aqua;
+  padding: 10px;
+  border-radius: 5px;
   background-color: grey;
   fill: white;
 }
+
 a:hover {
   background-color: red;
 }
+
+/* Main Container Styles */
 main > .container > article:first-child > section.container:first-of-type {
-  border: 10px double aqua; /* Adjust the border properties as needed */
-  padding: 20px; /* Optional: Add padding to the section */
-  margin: 20px; /* Optional: Add margin to create space */
+  border: 10px double aqua;
+  padding: 20px;
+  margin: 20px;
   border-radius: 5px;
   background-color: black;
 }
+
 main
   > .container
   > article:first-child
@@ -91,50 +104,57 @@ main
   h2:not(.no-border) {
   border: 1px solid black;
 }
+
 header h2 {
   border: none;
 }
 
-/* Target the second section element with the class container inside main */
+/* Second Section Styling */
 main > .container > article:first-child > section.container:nth-of-type(2) {
   margin: 20px;
   padding: 20px;
 }
+
 main > .container > article:first-child > section.container:nth-of-type(2) h2 {
-  border: 4px groove aqua; /* Adjust the border properties as needed */
+  border: 4px groove aqua;
   padding: 20px;
   border-radius: 5px;
   background-color: black;
 }
+
 main > .container > article:first-child > section.container:nth-of-type(2) ul {
-  border: 4px solid aqua; /* Adjust the border properties as needed */
+  border: 4px solid aqua;
   padding: 30px;
   line-height: 1.4;
   border-radius: 5px;
   background-color: black;
 }
+
 section,
 article,
 footer,
 aside {
-  /* margin: 20px; */
   padding: 20px;
 }
+
 h2 {
   border: 4px solid aqua;
   border-radius: 5px;
   background-color: black;
   padding: 20px;
 }
+
 #files h3 {
   border: 4px solid aqua;
   border-radius: 5px;
   background-color: black;
   padding: 20px;
 }
+
 #styles {
   margin: 20px;
 }
+
 #profile-title {
   border: 4px solid aqua;
   border-radius: 5px;
@@ -146,41 +166,39 @@ h2 {
 /* Reduce the size of stars */
 .link-github svg,
 .link-github svg path {
-  width: 4%; /* Adjust the size as needed */
-  height: 4%; /* Adjust the size as needed */
+  width: 4%;
+  height: 4%;
   float: left;
 }
 
 /* Apply gradient to the SVG */
 .link-github svg {
-  background-image: linear-gradient(
-    to right,
-    #00ffff,
-    #0080ff
-  ); /* Gradient from aqua to blue */
+  background-image: linear-gradient(to right, #00ffff, #0080ff);
   fill: orangered;
 }
 
+/* Skip Link Styles */
 .skip-link {
   display: block;
-  padding: 10px 20px; /* Adjust padding as needed */
-  border: 4px solid aqua; /* Set border style */
-  border-radius: 5px; /* Optional: Add border radius for rounded corners */
-  margin: 20px; /* Add margin for spacing */
-  color: aqua; /* Set text color */
-  text-decoration: none; /* Remove underline */
+  padding: 10px 20px;
+  border: 4px solid aqua;
+  border-radius: 5px;
+  margin: 20px;
+  color: aqua;
+  text-decoration: none;
   background-color: white;
   color: blue;
   font-weight: bolder;
   font-size: 1.5rem;
 }
 
-/* Style the Skip to main content link on hover */
 .skip-link:hover {
-  background-color: aqua; /* Change background color on hover */
-  color: black; /* Change text color on hover */
+  background-color: aqua;
+  color: black;
   text-decoration: underline;
 }
+
+/* Footer Styling */
 .page-footer {
   border: 4px solid aqua;
   border-radius: 5px;
@@ -190,6 +208,162 @@ h2 {
   text-align: center;
   color: orangered;
 }
+
 .page-footer li {
   list-style: none;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile and small screens (up to 600px) */
+@media (max-width: 600px) {
+  html {
+    font-size: 1em;
+  }
+  #about {
+    padding: 0;
+  }
+  
+  header {
+    padding: 5px 10px;
+    margin: 10px;
+  }
+  section {
+    padding: 0;
+    margin: 0;
+  }
+  header p a {
+    padding: 5px;
+    font-size: 18px;
+  }
+  section p a {
+    font-size: 18px;
+  }
+  a {
+    padding: 5px;
+    font-size: 18px;
+  }
+  main > .container > article:first-child > section.container:first-of-type {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  main > .container > article:first-child > section.container:nth-of-type(2) {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .skip-link {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .page-footer {
+    font-size: 1rem;
+    padding: 3px;
+  }
+
+  .link-github svg {
+    width: 3%;
+    height: 3%;
+  }
+}
+
+/* Tablet screens (600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 1.2rem;
+  }
+  section,
+  article,
+  footer,
+  aside {
+    padding: 0;
+  }
+  header {
+    padding: 8px 15px;
+    margin: 15px;
+  }
+
+  main > .container > article:first-child > section.container:first-of-type {
+    padding: 18px;
+    margin: 15px;
+  }
+
+  main > .container > article:first-child > section.container:nth-of-type(2) {
+    padding: 18px;
+    margin: 15px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    padding: 18px;
+  }
+
+  .skip-link {
+    font-size: 1.2rem;
+    padding: 9px 18px;
+  }
+
+  .page-footer {
+    font-size: 1.2rem;
+    padding: 4px;
+  }
+
+  .link-github svg {
+    width: 3.5%;
+    height: 3.5%;
+  }
+}
+
+/* Desktop screens (over 900px) */
+@media (min-width: 900px) {
+  body {
+    font-size: 1.5rem;
+  }
+  section,
+  article,
+  footer,
+  aside {
+    padding: 0;
+  }
+  header {
+    padding: 10px 20px;
+    margin: 20px;
+  }
+
+  main > .container > article:first-child > section.container:first-of-type {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  main > .container > article:first-child > section.container:nth-of-type(2) {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .skip-link {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+
+  .page-footer {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .link-github svg {
+    width: 4%;
+    height: 4%;
+  }
 }
